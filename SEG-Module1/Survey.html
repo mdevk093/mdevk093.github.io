@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Survey</h1>
+        <h4>Hosted by Amazon</h4>
+    </div>
+
+    <div class="content">
+        <div class="background">
+
+        
+            <div class="image">
+                <img src="Images/amazon.jpg" alt="https://www.amazon.ca/" width="800" height="600">
+            </div>
+
+            <div class="info">
+                <p id="description" class="description">How do you like <a class="description" href="http://www.amazon.com">Amazon.com?</a> </p>
+                <div class="title">
+                    <h3>Questions</h3>
+                </div>
+                
+                <div class="border">
+                    <div class="personalinfo">
+                        <p>First Name
+                            <br>
+                            <textarea  cols="40" rows="2"name="firstname"></textarea>
+                            
+                        </p>
+                        <p>Last Name
+                            <br>
+                            <textarea type="text" cols="40" rows="2"name="firstname"></textarea>
+                        </p>
+                    </div>
+
+                    <div class ="questions">
+                        <div class="radioquestion">
+                            <p>How often do you use Amazon?</p>
+                            <input type="radio" name="question1" value="everyday">
+                            Every 2-3 days
+                            <br>
+                            <input type="radio" name="question1" value="week">
+                            Once a week
+                            <br>
+                            <input type="radio" name="question1" value="month">
+                            Once a month
+                            <br>
+                            <input type="radio" name="question1" value="everyday">
+                            Never
+                            <br>
+                        </div>
+
+                        <div class="checkboxquestion">
+                            <p>What do you order?</p>
+                            <input type="checkbox" name="order">
+                            Electronics
+                            <br>
+                            <input type="checkbox" name="order">
+                            Makeup
+                            <br>
+                            <input type="checkbox" name="order">
+                            Clothing
+                            <br>
+                            <input type="checkbox" name="order">
+                            Groceries
+                            <br>
+                        </div>
+                        <br>
+
+                        <div class="select">
+                            <label for="UI">How do you like the UI: </label>
+                            <select name="UI" id="UI">
+                                <option value="Love">Love it!</option>
+                                <option value="Fine">Fine</option>
+                                <option value="improvement">Needs Improvement</option>
+                                <option value="Hate">Hate it!</option>
+                            </select>
+                                
+                        </div>
+                        
+                        <div class="comments">
+                            <p><label>Additional Comments <br>
+                                <textarea name="comments"cols="42" rows="12">Enter Comments here</textarea>
+                            </label></p>
+                        </div>
+
+                    </div>
+                </div>
+                <input type="submit" value="Submit">
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>Created, Desgined, Wrote by: Goku</h4>
+    </div>
+</body>
+</html>
