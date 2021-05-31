@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="tab">
+                <h1>Goku's Grocery Store</h1>
+                <button class="tablinks" id="gang" onclick="openTabs(event, 'Client')">Client</button>
+                <button class="tablinks" onclick="openTabs(event, 'Products')">Products</button>
+                <button class="tablinks" onclick="openTabs(event, 'Cart')">Cart</button>
+
+            </div>
+        </div>
+
+
+        <div class="info">
+            <div class="box">
+                <div id="Client" class="tabcontent">
+                    <br>
+                    <br>
+                    
+                    <p>What type of food are you looking for?</p>
+                    <br>
+                    
+                    <p>Filter by Category</p>
+                    <select id="selectOption">
+                        <option value="None">None</option>
+                        <option value="Lactose">Lactose Free</option>
+                        <option value="NutFree">Nut Free</option>
+                        <option value="Both">Lactose and Nut Free</option>
+                    </select>
+                    <br>
+                    <p>Filter by Organic</p>
+                    <input type="radio" name="org" value="yes">Organic
+                    <input type="radio" name="org" value="no">Non-Organic
+
+                    <br>
+                    <br>
+                    <input type="submit" value="Save" onclick="populateListProductChoices('selectOption', 'org', 'displayProduct')">
+                    <br>
+                    <br>
+                    <p id="papa">Select your preference and hit the Save button first </p>
+                    <br>
+                    <br>
+                </div>
+                  
+                <div id="Products" class="tabcontent">
+                    <h3>Products </h3>
+                    <p>These are the products targeted for you based on your selection</p>
+                    <br>
+                    <br>
+                    <div id="displayProduct"></div>
+                    <br>
+                    
+                    <button id="addCart" type="button" class="block" onclick="selectedItems()">
+                        Add selected items to cart.
+                    </button>
+                    <br>
+                    <br>
+                </div>
+                  
+                <div id="Cart" class="tabcontent">
+                    <h3>Cart</h3>
+                    <p>You have selected:</p>
+                    <div id="displayCart"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <h4>Created, Desgined, Wrote by: Goku</h4>
+    </div>
+
+    <script src="gang.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
