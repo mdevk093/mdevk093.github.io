@@ -122,6 +122,22 @@ var products = [
         price:12.48,
         organic:false,
     },
+	{
+        name: "Steak",
+        lactose: true,
+        nutfree:true,
+        LacAndNut:true,
+        price:15.48,
+        organic:false,
+    },
+	{
+        name: "Fried Chicken",
+        lactose: true,
+        nutfree:true,
+        LacAndNut:true,
+        price:16.48,
+        organic:false,
+    },
           
 
 
