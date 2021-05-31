@@ -34,7 +34,6 @@ function populateListProductChoices(category, org, slct2) {
 	
     var s2 = document.getElementById(slct2);
 
-	
 	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
     s2.innerHTML = "";
 		
@@ -56,14 +55,13 @@ function populateListProductChoices(category, org, slct2) {
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
+		checkbox.id = optionArray[i].price;
 		checkbox.value = productName;
 		var smallbox = document.createElement("div")
 		smallbox.className="labelbox"
 
 		smallbox.appendChild(checkbox);
 		box.appendChild(smallbox);
-		
-		
 		
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
@@ -75,7 +73,6 @@ function populateListProductChoices(category, org, slct2) {
 		box.appendChild(label);
 		box.appendChild(paragraph)
 		s2.appendChild(box);
-		
 		
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
@@ -89,6 +86,7 @@ function populateListProductChoices(category, org, slct2) {
 function selectedItems(){
 	
 	var ele = document.getElementsByName("product");
+	//console.log(ele)
 	var chosenProducts = [];
 	
 	var c = document.getElementById('displayCart');
@@ -98,12 +96,38 @@ function selectedItems(){
 	var para = document.createElement("P");
 	
 	para.appendChild(document.createElement("br"));
+
+	arr = [];
+	for (i = 0; i < ele.length; i++) {
+		//console.log(ele[i])
+		if (ele[i].checked){
+			console.log(ele[i])
+			arr.push(ele[i])
+		}
+	}
+
+	console.log(arr)
+	for (var i = arr.length; i>=0; i--){
+		for(var j = 1; j<=i; j++){
+		  if(arr[j-1]>arr[j]){
+			  var temp = arr[j-1];
+			  arr[j-1] = arr[j];
+			  arr[j] = temp;
+		   }
+		}
+	}
+
+	//console.log(arr)
+
+
 	for (i = 0; i < ele.length; i++) { 
+		//console.log(ele[i])
 		if (ele[i].checked) {
 			var box = document.createElement("div")
 			var anotherpara = document.createElement("P");
 			box.className="anotherproductbox"
 			anotherpara.appendChild(document.createTextNode(ele[i].value));
+			anotherpara.appendChild(document.createTextNode(" $"+ele[i].id));
 			anotherpara.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
 			box.appendChild(anotherpara)
