@@ -60,7 +60,7 @@ var products = [
         lactose: true ,
         nutfree:false,
         LacAndNut:false,
-        price:5.00,
+        price:5.49,
         organic:false,
     },
     {
@@ -86,7 +86,7 @@ var products = [
         lactose: true,
         nutfree:true,
         LacAndNut:true,
-        price:5.80,
+        price:5.81,
         organic:false,
     },
     {
