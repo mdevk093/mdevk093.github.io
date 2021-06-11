@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physico Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <img class="card-img-top" src="logo.jpg"Card image cap">
+       <h2 id="title">Goku's Animal Care</h2>
+       <br>
+       <h2>Best Vet Clinic In Brampton</h4>
+       <h2 id="location">21 Jumpstreet, Brampton, ON</h3>
+        <button type="button" class="btn btn-primary btn-lg" onClick="document.getElementById('book').scrollIntoView();">Book Appointment</button>
+            
+    </div>
+    <br>
+    <br>
+
+    <div class="aboutus">
+        <h1>About Us</h1>
+        <br>
+        <div class="card" style="width: 60%;">
+            <div class="card-body">
+                <h5 class="card-title">COMPLETE VETERINARY CARE IN BRAMPTON</h5>
+                <br>
+                <p class="card-text">Here at Goku's Animal Care in Brampton, we offer the highest quality care possible to keep your pet happy and healthy. Our clinic is equipped with a full surgical suite, digital radiology suite and on-site laboratory, as well as a non-invasive therapy laser. Our amazing staff and veterinarians offer complete medical, dental and surgical care as we strive to keep up-to-date on the latest in veterinary technology in order to diagnose and treat a variety of conditions, as well as provide routine wellness care. </p>
+              
+                <a href="#team" class="card-link">Meet the Team</a>
+                <br>
+                <br>
+            </div>
+          </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="team" id="team">
+        <h1>Meet the Team</h1>
+        <br>
+        <div class="card" style="width: 60%;">
+            <br>
+            <div class="row">
+                
+            
+            
+            
+                <div class="col-sm-6">
+                    <div class="card" id="GANG" style="width: 60%;">
+                        <img class="card-img-top" src="pet-insurance-2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Shelly O'hare</h5>
+                            <p class="card-text">A vet with over 11 years of experince who excels at Vaccinations.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                <br>
+            
+                <div class="col-sm-6">
+                    <div class="card" id="GANG" style="width: 60%;">
+                        <img class="card-img-top" src="portrait-of-female-physician.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Adesh Btenly</h5>
+                            <p class="card-text">A vet with over 14 years of experince who excels at Surgerys.</p>
+                            
+                        </div>
+                    </div>
+                    </div>
+            
+                <br>
+                
+                <div class="col-sm-12">
+                    <br>
+                    <div class="card" id="GANG" style="width: 50%;">
+                        <img class="card-img-top" src="maledoctor.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tim Quikly</h5>
+                            <p class="card-text">A vet with 23+ years of experience who excels at Grooming. </p>
+                        </div>
+                    </div>
+                
+                <br>
+
+            </div>
+            </div>
+    </div>
+    <br>
+    <br>
+    <div class="services" id="services">
+        <h1>Services</h1>
+        <br>
+        <div class="card" style="width: 60%;">
+            <br>
+            <div class="card" style="width: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">Grooming - $50</h5>
+                    
+                </div>
+            </div>
+            <br>
+            
+            <div class="card" style="width: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">Vaccinations - $35</h5>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">Laser therapy - $100</h5>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">Radiology - $75</h5>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 50%;">
+                <div class="card-body">
+                    <h5 class="card-title">Surgical - $250</h5>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="book" id="book">
+        <h1>Book Appointment</h1>
+        <br>
+        <div class="card" style="width: 60%;">
+             <br>
+             <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                        <select id="selectOption">
+                        <option>Select Service</option>
+                        <option value="None">Grooming</option>
+                        <option value="Lactose">Vaccinations</option>
+                        <option value="NutFree">Laser therapy</option>
+                        <option value="Veg">Radiology</option>
+                        <option value="Protein">Surgical</option>
+                        
+                    </select>
+                  </div>
+                  <div class="col-sm">
+                    <form id="date" action="/action_page.php">
+                        <label for="birthday">Appointment Date</label>
+                        <br>
+                        <input type="date" id="birthday" name="birthday">
+                        
+                      </form>
+                  </div>
+                  <div class="col-sm">
+                    <label for="appt">Choose a time for your meeting:</label>
+
+                    <input type="time" id="appt" name="appt"
+                        min="09:00" max="18:00" required>
+
+                    <small>Office hours are 9am to 6pm</small>
+
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="mb-3">
+                <p>First Name</p>
+              <input type="text" class="form-control" placeholder="John" aria-label="First name">
+            </div>
+            
+            
+            <div class="mb-3">
+                <p>Last Name</p>
+              <input type="text" class="form-control" placeholder="Doe" aria-label="Last name">
+          </div>
+              <div class="mb-3">
+                  <p>Email</p>
+                <input type="email" class="form-control" id="FormControlInput1" placeholder="name@example.com">
+              </div>
+              
+            <div class="mb-3">
+                <p>Phone Number</p>
+                <input type="text" class="form-control mb-2" id="FormControlInput2" placeholder="000-000-0000">
+            </div>
+              
+            <input type="submit" value="Book Now!" id="booking">
+              <br>
+        </div>
+    </div>
+    <br>
+
+    
+</body>
+</html>

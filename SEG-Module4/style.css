@@ -1,0 +1,98 @@
+body,html {
+    margin:0;
+    padding:0;
+}
+
+.header{
+    text-align: center;
+    height: 100vh;
+    
+}
+
+.header h2{
+    position: relative;
+    top: 40%;
+    transform: translate(0%, -50%);
+    
+}
+
+button{
+    position: relative;
+    top: 50%;
+}
+
+h1{
+    text-align: center;
+}
+
+.card{
+    left: 50%;
+    transform: translate(-50%);
+    
+}
+
+.card-title{
+    color: rgb(57, 181, 230);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#title{
+    color: rgb(57, 181, 230);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#location{
+    color: rgb(57, 181, 230);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.GANG{
+    position: fixed;
+    
+    display: inline-block;
+}
+
+.card-link{
+    text-align: center;
+}
+
+.card-body h5{
+    text-align: center;
+}
+
+#selectOption{
+    
+    width: 60%;
+    
+}
+.mb-3 input{
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mb-3 p{
+    text-align: center;
+}
+
+#booking{
+    width: 50%;
+    background-color: rgb(57, 181, 230);
+    margin-left: 25%;
+    border-color: rgb(255, 196, 0);
+    height: 40px;
+    
+}
+
+
+.header img{
+    position: relative;
+    top: 30%;
+    width: 200px;
+    
+}
+
