@@ -11,14 +11,14 @@ body,html {
 
 .header h2{
     position: relative;
-    top: 30%;
+    top: 25%;
     transform: translate(0%, -50%);
     
 }
 
 button{
     position: relative;
-    top: 30%;
+    top: 25%;
 }
 
 h1{
