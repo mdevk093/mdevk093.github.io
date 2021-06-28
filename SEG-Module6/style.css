@@ -1,0 +1,57 @@
+.home{
+    height: 900px;
+    background-color: #ffffff;
+    background-image: -webkit-linear-gradient(-70deg, #da4a37 40%, #fafafa 0%);
+      
+}
+
+.custom-row{
+    height: 900px;
+    text-align: center;
+    color: rgb(58, 129, 221);;
+}
+
+.aboutus{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+}
+.aboutus h1{
+    text-align: center;
+}
+
+.card{
+    align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.services h1{
+    text-align: center;
+}
+
+/* change the background color */
+.navbar-custom {
+    background-color: #4433cc;
+    list-style-type: none;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    font-weight: bold;
+    color: rgb(58, 129, 221);
+}
+
+.Title{
+    color: rgb(58, 129, 221);
+    font-size: 50px;
+}
+
+.team{
+    text-align: center;
+}
+
+
